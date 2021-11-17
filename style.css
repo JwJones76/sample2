@@ -142,6 +142,10 @@ nav .fas {
         flex-direction: column;
     }
 
+    .testimonials h1 {
+        font-size: 25px;
+    }
+
     .testimonials-col img {
         margin-left: 0px;
         margin-right: 15px;
