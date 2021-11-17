@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9a8a58dba5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" class="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="Index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Products.html">PRODUCTS</a></li>
+                    <li><a href="Blog.html">BLOG</a></li>
+                    <li><a href="Contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+
+    </section>
+
+
+<!-----------------------------------Contact Content------------------------------------------->
+
+<section class="location">
+
+    <P class="location-note">Placeholder location</P>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14537.580295776179!2d-105.5941750145673!3d40.00510160378148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bc59a6aa8c059%3A0x8ffed77bc6b91dec!2sRainbow%20Lakes!5e0!3m2!1sen!2sus!4v1637107420073!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-home"></i>
+                <span>
+                    <h5>Rainbow Lakes</h5>
+                    <p>Colorado 80466</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-phone"></i>
+                <span>
+                    <h5>720-249-6070</h5>
+                    <p>Monday to Friday, 10am to 6pm</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <div>
+                <i class="fas fa-envelope"></i>
+                <span>
+                    <h5>j_jones76@outlook.com</h5>
+                    <p>Monday to Friday, 10am to 6pm</p>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contact-col">
+
+        <form action="Form_handler.php" method="post">
+            <input type="text" name="name" placeholder="Enter yor name" required>
+            <input type="email" name="email" placeholder="Enter yor email" required>
+            <textarea rows="8" name="subject" placeholder="Message"></textarea>
+            <button type="submit" name="message" class="hero-btn red-btn">Send message</button>
+        </form>
+
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!------------------------------------------Footer---------------------------------------------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Placeholder for "About Us" info</p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+    </div>
+    <p>Made by Jacob Jones</p>
+</section>
+
+
+
+
+
+
+
+<!-------------------------------------Java script(toggle Menu)---------------------------------->
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>
+
