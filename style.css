@@ -564,3 +564,7 @@ h3 {
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+
+.mint {
+    height: 500px;
+}
